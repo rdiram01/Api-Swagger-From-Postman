@@ -21,7 +21,7 @@ produces:
 paths:
   /member/v1/access/registermem:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/registermem
       tags:
       - Misc
@@ -65,7 +65,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/registermem
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -73,7 +73,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/access/memberlogin:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/memberlogin
       tags:
       - Misc
@@ -117,7 +117,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/memberlogin
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -125,7 +125,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/registration/sendaccesscode:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/sendaccesscode
       tags:
       - Misc
@@ -176,7 +176,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/sendaccesscode
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -184,7 +184,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/registration/verifyaccesscode:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/verifyaccesscode
       tags:
       - Misc
@@ -234,7 +234,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/verifyaccesscode
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -242,7 +242,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/registration/updatememauthinfo:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/updatememauthinfo
       tags:
       - Misc
@@ -292,7 +292,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/updatememauthinfo
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -300,7 +300,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/registration/getmemauthinfo:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/getmemauthinfo
       tags:
       - Misc
@@ -350,7 +350,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/getmemauthinfo
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -416,7 +416,7 @@ paths:
         IsMultiContentStreaming: false
   /gettokens:
     get:
-      description: ''
+      description: 'TODO: Add Description'
       summary: saltedGetTokens
       tags:
       - Misc
@@ -442,7 +442,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: saltedGetTokens
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -450,7 +450,7 @@ paths:
         IsMultiContentStreaming: false
   /clientsidedecryption:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: decrypt
       tags:
       - Misc
@@ -500,7 +500,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: decrypt
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -508,7 +508,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/info/updatememprofile:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/updatememprofile
       tags:
       - Misc
@@ -567,7 +567,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/updatememprofile
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -575,7 +575,7 @@ paths:
         IsMultiContentStreaming: false
   /member/v1/info/updatemempreference:
     post:
-      description: ''
+      description: 'TODO: Add Description'
       summary: dev/updatememprofile copy
       tags:
       - Misc
@@ -634,7 +634,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: dev/updatememprofile copy
-        x-testDescription: ''
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
