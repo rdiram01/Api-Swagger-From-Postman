@@ -136,11 +136,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -152,7 +147,6 @@ paths:
           uri: /member/v1/registration/sendaccesscode
           headers:
             Content-Type: application/json
-            Authorization: Bearer ZIxe7zs6NwxJzAW8wEq5L1zEAI2r
           body: '{"message":"t43SYE6W0A6r59KNDnssVqedAf1sU/xTiTNV6ppDOW0SR5ZuUrFtA221WcFLUIzJt1YZlASYSuBbMAqC39YIkuSYF7RlqruswDLdBgI3pDI=","key1id":"8bafb4f9e06643beab00e0044a841fee"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -191,22 +185,17 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
           uri: /member/v1/registration/verifyaccesscode
           headers:
             Content-Type: application/json
-            Authorization: Bearer ZIxe7zs6NwxJzAW8wEq5L1zEAI2r
           body: '{"message":"zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjtW9RjwL2kA2jbsoHZkzgYOtaW/kkQJHr1NFS8SNDV3NdtQ0lqa9S0KowHxLZtMwDfeLqdDumisJUG3LeWHC4185TIDgTXZUw8D3XdwMjvRVA==","key1id":"71adb693f2f4457abfc493949f9a4f2b"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -245,22 +234,17 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
           uri: /member/v1/registration/updatememauthinfo
           headers:
             Content-Type: application/json
-            Authorization: Bearer aKrJZrkZ0eVFAjutwCGJMAmku3Uk
           body: '{"message":"L4ni23i5hj1EySUx63t06fz8EvkBFM47aq4hJ6+orP3e0yf4DuimPGnQGgFOs3bA+zE0Nx2WXuuVchMC2rmsodgveRx1gegoZkLcTSZ3ipQgvfvhqnpMAIl6hSsOcrkjNBWwRFhxHM0Xs8xy4fPrRf69nOM1ZgtqTTJZIRSJbhJSvhPeOnetACD/vWPymiNTDc5WMZn0yFU0RS8Vbmo/vN6J7OefF8qY6q76uM7enhMbSMixz9dsAlTOZBeKldAe2PnC9ORu2j5kgfKqhY+juncj9eyk89RiQ8XjairRl6Y5uUbtHUipPC3osZK0gXH05TSto9eW+CUAvkUiocfo452EjSRQivdKYp6PyTwNouU=","key1id":"71adb693f2f4457abfc493949f9a4f2b"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -299,22 +283,17 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
           uri: /member/v1/registration/getmemauthinfo
           headers:
             Content-Type: application/json
-            Authorization: Bearer KN4SZHnI2vGfrXekmbPHBrNCbwsJ
           body: '{"message":"zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjsESiNU/LTxcvUsZC3w5l2xclpe9Oj+3MiTlNLgmN5f1ZcSr9r8bBjAD5hEED8tWSU=","key1id":"71adb693f2f4457abfc493949f9a4f2b"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -353,22 +332,17 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
           uri: /member/v1/registration/authwithssn
           headers:
             Content-Type: application/json
-            Authorization: Bearer BkzSWLAEuuHoaYetKhJWeJDG4Rw2
           body: '{"message":"zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+Sjv9UJ2Ck171IDBwuwFAC5ia0MA+x4zWN6m2f1yb1YAtHta3FROTPUN8iDisuHCD/XaUfZmdR4IgTVSOdZCdha9l","key1id":"71adb693f2f4457abfc493949f9a4f2b"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -399,7 +373,8 @@ paths:
       responses:
         200:
           description: ''
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: GET
@@ -449,7 +424,8 @@ paths:
       responses:
         200:
           description: ''
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
@@ -495,11 +471,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -512,14 +483,14 @@ paths:
               result: -1
               errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
           uri: /member/v1/info/updatememprofile
           headers:
             Content-Type: application/json
-            Authorization: Bearer aRiTglnFfpofUGHhlobnHIQDimKA
           body: '{"message":"eOc7jw73C+4hKtew2NSGpWp8vvMKZM9/nAGTnfuF2y6F38NlI4Smb7JkSb1iMMTmfiXWtacveEVCal0kPpZD6l8FqOntA0NSLQEbwkAplNGhJvHuTw4htRplzzytHw2OugKsQ5BjxfaFyTpCcS4aaQIkl5ctZk/XHOH74NyA/e711aOajBOMF9iGPMX01y9qki5Q23Gd7D6zisztTJsLvhT2xc45lzntLrSWjlxsLkNfITHU5Sk8IG7fPHt9AucIrnJ4qEid2OwAbwCrkWetzw==","key1id":"0fd3e4264e6c4734af3cabdfa21ffa87"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -558,11 +529,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -575,14 +541,14 @@ paths:
               result: -1
               errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-      security: []
+      security:
+      - auth: []
       x-unitTests:
       - request:
           method: POST
           uri: /member/v1/info/updatemempreference
           headers:
             Content-Type: application/json
-            Authorization: Bearer eVP0RfgvGr62WUHo7B1YX11sZPDQ
           body: '{"message":"LG3jPpH73/1v6pvve5cbi4te4ZH+yD5rueIw4gh5JugsDqQP2QKP80BAn265Czv2p1kri70m7PRZTje7eLk22Ve0qUN4uOjcosxrH/YeCs+qiC0O+YcS+4AMLtGOQ/JjQ7bJDHSk91WC3T747BHWaqaWbOhu+g8Nld1E0Iqux694+ceXPMoBT6YVhA19JThhysYP5Cub1/kp3U3FDUhtr4ir4i03MdoeED4Ws49s69nOjNd57eZucDIGcYZGWpNlrSw8KWeBixNRvbJSPApFaQ==","key1id":"c2376ededd0d4101929c6084679ab10f"}'
         expectedResponse:
           x-allowExtraHeaders: true
