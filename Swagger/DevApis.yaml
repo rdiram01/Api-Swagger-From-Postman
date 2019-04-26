@@ -6,8 +6,8 @@
   },
   "item": [
     {
-      "_postman_id": "1584934-75888355-3bca-c059-f1ad-2bc7df2cc146",
       "name": "dev/registermem ",
+      "_postman_id": "1584934-75888355-3bca-c059-f1ad-2bc7df2cc146",
       "request": {
         "method": "POST",
         "header": [
@@ -25,7 +25,6 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-85533e17-1c83-e049-b248-68e40b733002",
       "name": "dev/memberlogin",
       "event": [
         {
@@ -40,6 +39,7 @@
           }
         }
       ],
+      "_postman_id": "1584934-85533e17-1c83-e049-b248-68e40b733002",
       "request": {
         "method": "POST",
         "header": [
@@ -57,8 +57,8 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-8454438d-12cb-49ab-8c9d-22209b303caf",
       "name": "dev/sendaccesscode",
+      "_postman_id": "1584934-8454438d-12cb-49ab-8c9d-22209b303caf",
       "request": {
         "method": "POST",
         "header": [
@@ -80,8 +80,8 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-6adc57ee-4bd3-4e9f-4909-2387ffaa4321",
       "name": "dev/verifyaccesscode",
+      "_postman_id": "1584934-6adc57ee-4bd3-4e9f-4909-2387ffaa4321",
       "request": {
         "method": "POST",
         "header": [
@@ -103,8 +103,8 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-76e0bc10-3f3f-12f7-5ca6-ed5282a2d55a",
       "name": "dev/updatememauthinfo",
+      "_postman_id": "1584934-76e0bc10-3f3f-12f7-5ca6-ed5282a2d55a",
       "request": {
         "method": "POST",
         "header": [
@@ -126,8 +126,8 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-cc1b2950-4e4e-4bf8-94ca-e5d21979918b",
       "name": "dev/getmemauthinfo",
+      "_postman_id": "1584934-cc1b2950-4e4e-4bf8-94ca-e5d21979918b",
       "request": {
         "method": "POST",
         "header": [
@@ -149,8 +149,8 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-53ae7520-99c3-ec44-e162-f45506c2591e",
       "name": "dev/authwithssn",
+      "_postman_id": "1584934-53ae7520-99c3-ec44-e162-f45506c2591e",
       "request": {
         "method": "POST",
         "header": [
@@ -173,19 +173,22 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-b62f40e3-e40f-bddb-b758-55d7ac59f6d2",
       "name": "saltedGetTokens",
+      "_postman_id": "1584934-b62f40e3-e40f-bddb-b758-55d7ac59f6d2",
       "request": {
         "method": "GET",
         "header": [],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "https://mobilememberstage.bluecrossma.com/memapi_dev/mobilekeyservice/v1/gettokens"
       },
       "response": []
     },
     {
-      "_postman_id": "1584934-9c1ce4f8-46ad-d54f-cbc5-3ae6d5ba5da5",
       "name": "decrypt",
+      "_postman_id": "1584934-9c1ce4f8-46ad-d54f-cbc5-3ae6d5ba5da5",
       "request": {
         "method": "POST",
         "header": [
@@ -207,8 +210,8 @@
       "response": []
     },
     {
-      "_postman_id": "1584934-8acc75af-e4a8-2ebe-3db4-089d34e71a40",
       "name": "dev/updatememprofile",
+      "_postman_id": "1584934-8acc75af-e4a8-2ebe-3db4-089d34e71a40",
       "request": {
         "method": "POST",
         "header": [
@@ -324,7 +327,7 @@
           ],
           "cookie": [
             {
-              "expires": "Fri Oct 06 2017 05:20:49 GMT+0000 (UTC)",
+              "expires": "Fri Oct 06 2017 05:20:49 GMT+0000 (Coordinated Universal Time)",
               "httpOnly": true,
               "domain": "bcbsma-dev.apigee.net",
               "path": "/",
@@ -339,8 +342,8 @@
       ]
     },
     {
-      "_postman_id": "1584934-06d43737-3bea-ecee-7c45-3430b81f3ea9",
       "name": "dev/updatememprofile copy",
+      "_postman_id": "1584934-06d43737-3bea-ecee-7c45-3430b81f3ea9",
       "request": {
         "method": "POST",
         "header": [
@@ -456,7 +459,7 @@
           ],
           "cookie": [
             {
-              "expires": "Fri Oct 06 2017 05:20:49 GMT+0000 (UTC)",
+              "expires": "Fri Oct 06 2017 05:20:49 GMT+0000 (Coordinated Universal Time)",
               "httpOnly": true,
               "domain": "bcbsma-dev.apigee.net",
               "path": "/",
