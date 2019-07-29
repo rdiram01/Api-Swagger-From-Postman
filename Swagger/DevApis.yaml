@@ -1,531 +1,131 @@
-swagger: '2.0'
-info:
-  version: '1.0'
-  title: DevApis
-  description: 'TODO: Add Description'
-  contact: {}
-host: mobilememberstage.bluecrossma.com
-basePath: /memapi_dev/mobilekeyservice/v1
-securityDefinitions: {}
-schemes:
-- https
-consumes:
-- application/json
-produces:
-- application/json
-paths:
-  /member/v1/access/registermem:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/registermem
-      tags:
-      - Misc
-      operationId: MemberV1AccessRegistermemPost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1registermemrequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/access/memberlogin:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/memberlogin
-      tags:
-      - Misc
-      operationId: MemberV1AccessMemberloginPost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1memberloginrequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/registration/sendaccesscode:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/sendaccesscode
-      tags:
-      - Misc
-      operationId: MemberV1RegistrationSendaccesscodePost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1sendaccesscoderequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/registration/verifyaccesscode:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/verifyaccesscode
-      tags:
-      - Misc
-      operationId: MemberV1RegistrationVerifyaccesscodePost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1verifyaccesscoderequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/registration/updatememauthinfo:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/updatememauthinfo
-      tags:
-      - Misc
-      operationId: MemberV1RegistrationUpdatememauthinfoPost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1updatememauthinforequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/registration/getmemauthinfo:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/getmemauthinfo
-      tags:
-      - Misc
-      operationId: MemberV1RegistrationGetmemauthinfoPost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1getmemauthinforequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/registration/authwithssn:
-    post:
-      description: Final step in Authentication process when Member enters their ssn
-      summary: dev/authwithssn
-      tags:
-      - Misc
-      operationId: MemberV1RegistrationAuthwithssnPost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1authwithssnrequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /gettokens:
-    get:
-      description: 'TODO: Add Description'
-      summary: saltedGetTokens
-      tags:
-      - Misc
-      operationId: GettokensGet
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /clientsidedecryption:
-    post:
-      description: 'TODO: Add Description'
-      summary: decrypt
-      tags:
-      - Misc
-      operationId: ClientsidedecryptionPost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: autho
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/decryptrequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /member/v1/info/updatememprofile:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/updatememprofile
-      tags:
-      - Misc
-      operationId: MemberV1InfoUpdatememprofilePost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1updatememprofilerequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-        400:
-          description: Bad Request
-          schema:
-            $ref: '#/definitions/dev~1updatememprofile'
-          examples:
-            application/json:
-              result: -1
-              errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-              displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-  /member/v1/info/updatemempreference:
-    post:
-      description: 'TODO: Add Description'
-      summary: dev/updatememprofile copy
-      tags:
-      - Misc
-      operationId: MemberV1InfoUpdatemempreferencePost
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/dev~1updatememprofilecopyrequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-        400:
-          description: Bad Request
-          schema:
-            $ref: '#/definitions/dev~1updatememprofile'
-          examples:
-            application/json:
-              result: -1
-              errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-              displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-definitions:
-  dev/registermemrequest:
-    title: dev/registermemrequest
-    example:
-      message: BKhp4csbNFLvj8yztgOWTMKADzkbjD3Lunny+CQtFMsN/R3zZthRNEMPC7Y8eyqGGV+zBIO99Potniq3B9SGMVy2wmP5rez/7CvUHDASIrEFSPOacks7EVfRWEBV3ko5qk0d9C7axftJ31rQBzW3HXA8r/9nZO7lzljGDIJXWRk=
-      key1id: 1b282082aee6481dbd38cad39edc3117
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/memberloginrequest:
-    title: dev/memberloginrequest
-    example:
-      message: pjsGzPjGwy6WgN5orsfIkWiZXpj6OfoxUyrQHnaYuaSN+UyAeUJ2Vx7B1/Dszlm3f4EtqxS4Rk0Sp3IFyQ9vw5CW1j8tAl5+JZOstpsPvmEJpxVoddM8bIlymIQ53bKRYNay9QaNrC4sgbP/mn9VFw==
-      key1id: c838c12f13c2458aafd6e4e029e2f884
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/sendaccesscoderequest:
-    title: dev/sendaccesscoderequest
-    example:
-      message: t43SYE6W0A6r59KNDnssVqedAf1sU/xTiTNV6ppDOW0SR5ZuUrFtA221WcFLUIzJt1YZlASYSuBbMAqC39YIkuSYF7RlqruswDLdBgI3pDI=
-      key1id: 8bafb4f9e06643beab00e0044a841fee
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/verifyaccesscoderequest:
-    title: dev/verifyaccesscoderequest
-    example:
-      message: zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjtW9RjwL2kA2jbsoHZkzgYOtaW/kkQJHr1NFS8SNDV3NdtQ0lqa9S0KowHxLZtMwDfeLqdDumisJUG3LeWHC4185TIDgTXZUw8D3XdwMjvRVA==
-      key1id: 71adb693f2f4457abfc493949f9a4f2b
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/updatememauthinforequest:
-    title: dev/updatememauthinforequest
-    example:
-      message: L4ni23i5hj1EySUx63t06fz8EvkBFM47aq4hJ6+orP3e0yf4DuimPGnQGgFOs3bA+zE0Nx2WXuuVchMC2rmsodgveRx1gegoZkLcTSZ3ipQgvfvhqnpMAIl6hSsOcrkjNBWwRFhxHM0Xs8xy4fPrRf69nOM1ZgtqTTJZIRSJbhJSvhPeOnetACD/vWPymiNTDc5WMZn0yFU0RS8Vbmo/vN6J7OefF8qY6q76uM7enhMbSMixz9dsAlTOZBeKldAe2PnC9ORu2j5kgfKqhY+juncj9eyk89RiQ8XjairRl6Y5uUbtHUipPC3osZK0gXH05TSto9eW+CUAvkUiocfo452EjSRQivdKYp6PyTwNouU=
-      key1id: 71adb693f2f4457abfc493949f9a4f2b
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/getmemauthinforequest:
-    title: dev/getmemauthinforequest
-    example:
-      message: zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjsESiNU/LTxcvUsZC3w5l2xclpe9Oj+3MiTlNLgmN5f1ZcSr9r8bBjAD5hEED8tWSU=
-      key1id: 71adb693f2f4457abfc493949f9a4f2b
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/authwithssnrequest:
-    title: dev/authwithssnrequest
-    example:
-      message: zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+Sjv9UJ2Ck171IDBwuwFAC5ia0MA+x4zWN6m2f1yb1YAtHta3FROTPUN8iDisuHCD/XaUfZmdR4IgTVSOdZCdha9l
-      key1id: 71adb693f2f4457abfc493949f9a4f2b
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  decryptrequest:
-    title: decryptrequest
-    example:
-      message: LaYioNcIw5nwn7+pZRPcDrEMCbv0Ay3tvU8pKZNtYWm4qUnBbL+W0FT0U+Zf7+sqJBz08HDaWBoQoaMCXyObHasVu3jDprFP8E7cA1MOxHZKsF1ruLcOqTR0uWqIHQfud3ZUYqdqRXMBLoT8Xw8xVIo44CyEOuNGr95Ynp6f2JLx1PjYLkUpAGvkd9ttWknSstqNNwZIscFNmP0f8Kw6dZlJ6O1n+uSIVx/5BYAiPwgi+6nX7N8wZ6gpYJpk50a6ELq1YE4uvwYtYGL4O4EwHuGya8FGB2gglCYSBslTa8QqLOzNW5lWg93MfBYQrAqlS29owYZrztvx8R9Gn1uRJZco7PItsaeeVyM99tNul2+BxRyP7RTIT4QWwvxb+0TwsVrqw6IjT/a4zr0+RIHSqJZEMhvkJvU9zZZTqO9kCT7ilzi3qKZxKBNRx9K+vAvkLhejUY/gJWWowNHmr3UCNWqNG1M7d0Bc7Z8q0wp/NATndxtWhiKMrZ2ZdXQFoVmpxBa3sCJGOCN6ECMfTgMHXqq6TgyE9uW2zPY3V0WgZqpkHi85GsXOYzPGnE4GF1oCnIAzG92c7jqI+n2ZxjFWznHCIr9Al7ZqPJaLjj4Tq+aQg2Sdv7B8oixzy7RlEfHEiaRN3lBGYbK6VDk62uiCXaiGzjc6vEEwGfSSnvoMyCCkJPFArRpxIW/e2LUvl2ENnNulEcniFuc0xLD0VhnS/yk8IEVJsJWeYGPH35JWuaEhjH04D7co3g0LZZCNWbiOgE7StlQVRuDWc8eQhy6tmwP9U9BF2ZZFp2pwyXQBsoa7IHnWdQkoNvzvJr2HAOX4HFdM1FFqQVrIAZk1ZtxOvj1+k4/7OJxImBnLZtIOCBDnxl06PQSKBjmKzSLu1VqQeAZygGaaVcqEe2RDpsOPfLhwQE4Mx9O/Xn+++egX9tWipP2KrjM/++MsBhBf2W0wGWZG47IYHuITh4lfgLuOLDK9jHanq6cNYIspsEJQJqcz6fXuJXB2fHVDqQieWmmG
-      key2id: e3d6c6213b6b4458916142ff2cb71db1
-    type: object
-    properties:
-      message:
-        type: string
-      key2id:
-        type: string
-    required:
-    - message
-    - key2id
-  dev/updatememprofilerequest:
-    title: dev/updatememprofilerequest
-    example:
-      message: eOc7jw73C+4hKtew2NSGpWp8vvMKZM9/nAGTnfuF2y6F38NlI4Smb7JkSb1iMMTmfiXWtacveEVCal0kPpZD6l8FqOntA0NSLQEbwkAplNGhJvHuTw4htRplzzytHw2OugKsQ5BjxfaFyTpCcS4aaQIkl5ctZk/XHOH74NyA/e711aOajBOMF9iGPMX01y9qki5Q23Gd7D6zisztTJsLvhT2xc45lzntLrSWjlxsLkNfITHU5Sk8IG7fPHt9AucIrnJ4qEid2OwAbwCrkWetzw==
-      key1id: 0fd3e4264e6c4734af3cabdfa21ffa87
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-  dev/updatememprofile:
-    title: dev/updatememprofile
-    example:
-      result: -1
-      errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-      displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
-    type: object
-    properties:
-      result:
-        type: string
-      errormessage:
-        type: string
-      displaymessage:
-        type: string
-    required:
-    - result
-    - errormessage
-    - displaymessage
-  dev/updatememprofilecopyrequest:
-    title: dev/updatememprofilecopyrequest
-    example:
-      message: LG3jPpH73/1v6pvve5cbi4te4ZH+yD5rueIw4gh5JugsDqQP2QKP80BAn265Czv2p1kri70m7PRZTje7eLk22Ve0qUN4uOjcosxrH/YeCs+qiC0O+YcS+4AMLtGOQ/JjQ7bJDHSk91WC3T747BHWaqaWbOhu+g8Nld1E0Iqux694+ceXPMoBT6YVhA19JThhysYP5Cub1/kp3U3FDUhtr4ir4i03MdoeED4Ws49s69nOjNd57eZucDIGcYZGWpNlrSw8KWeBixNRvbJSPApFaQ==
-      key1id: c2376ededd0d4101929c6084679ab10f
-    type: object
-    properties:
-      message:
-        type: string
-      key1id:
-        type: string
-    required:
-    - message
-    - key1id
-tags:
-- name: Misc
-  description: ''
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>APIMATIC - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css" rel="stylesheet" />
+<link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.css"
+          integrity="sha256-nVXk5aDYc/D4r9OoqxZ5H6vpIAqAG5BhVuIdOihDN1c="
+          crossorigin="anonymous" />
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+<link href="/bundles/front-css?v=5cc8tdDAN86fLsP3hA4mwaeZHhprhYi9JC7-9qiNjdQ1" rel="stylesheet"/>
+
+    <link href="/bundles/onboarding-css?v=OkE3LPqCxZO4VvCfP5gezTWQD3lRyMqFJHasxdy9ECU1" rel="stylesheet"/>
+
+
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+</head>
+<body>
+    <div class="container onboarding-container">
+            <div class="onboarding-container-centered ">
+                
+
+
+
+<header class="flex flex-col align-center">
+    <div class="icon">
+        <a href="/">
+            <img class="mx-auto d-block" alt="APIMATIC logo" title="Welcome to APIMATIC" src="/imgs/apimatic-logo.svg" />
+        </a>
+    </div>
+    <div class="content">
+        <p>Login to your account</p>
+    </div>
+
+</header>
+<section class="form-wrapper flex flex-col">
+
+<form action="/account/login?ReturnUrl=%2Fapi%2Ftransform%3Fformat%3Dswaggeryaml%26apikey%3DmONZg6E9hVHp7-WXsHucCGl-lXLvzN0t9GGEQ_s1xgrILHdXq_d50wEd8ptizzQN" id="loginForm" method="post" novalidate="True" role="form"><input name="__RequestVerificationToken" type="hidden" value="Hv4bxNw44m3awvtclGW3p8GEgjH6vF6zxZlAaZQd_PylGJu3Two0GMDe4YEElQLSLfwlRGTrj5iFRY76Pqbb6hG5C-Oo7bmzp9cxf47e9vo1" /><div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>        <div class="form-group">
+            <label class="mb-1" for="signInInputEmail1">
+                Email
+            </label>
+            <input class="form-control form-control-sm" data-Validation="email" data-val="true" data-val-email="The Email Address field is not a valid e-mail address." data-val-required="Email is required" id="Email" name="Email" placeholder="Enter email here" required="required" tabindex="2" type="email" value="" />
+
+        </div>
+        <div class="form-group mb-0">
+            <label class="mb-1" for="signInInputPassword">
+                Password
+            </label>
+            <a class="forgot-password" href="/account/forgotpassword?Length=7">Forgot password?</a>
+            <input class="form-control extra-padding-right" data-title="Caps lock is on" data-toggle="tooltip" data-trigger="manual" data-val="true" data-val-required="Password is required" id="js-onboarding-password-field" name="Password" placeholder="Password" required="true" type="password" />
+            <i class="fa fa-eye onboarding-show-password-icon" id="js-onboarding-show-password-icon"></i>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input class="custom-control-input" data-val="true" data-val-required="The Remember me? field is required." id="customControlInline" name="RememberMe" tabindex="4" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
+                Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm btn-block" tabindex="5">
+            Login
+        </button>
+        <a href="/account/register" class="btn btn-white btn-sm btn-block" tabindex="6">
+            Sign Up
+        </a>
+</form></section>
+
+            </div>
+    </div>
+</body>
+</html>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+
+<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+
+<script src="/bundles/front-js?v="></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script>
+    $.validate({
+        modules: 'date, security'
+    });
+</script>
+<script src="/bundles/onboarding-js?v=2h6We__p_84-tByynY6kDWiE-iuM8Pigjw1rycnNaQY1"></script>
+
+
+
