@@ -20,7 +20,7 @@ paths:
       summary: dev/registermem
       tags:
       - Misc
-      operationId: MemberV1AccessRegistermemPost
+      operationId: dev/registermem
       deprecated: false
       produces:
       - application/json
@@ -51,7 +51,7 @@ paths:
       summary: dev/memberlogin
       tags:
       - Misc
-      operationId: MemberV1AccessMemberloginPost
+      operationId: dev/memberlogin
       deprecated: false
       produces:
       - application/json
@@ -82,7 +82,7 @@ paths:
       summary: dev/sendaccesscode
       tags:
       - Misc
-      operationId: MemberV1RegistrationSendaccesscodePost
+      operationId: dev/sendaccesscode
       deprecated: false
       produces:
       - application/json
@@ -113,7 +113,7 @@ paths:
       summary: dev/verifyaccesscode
       tags:
       - Misc
-      operationId: MemberV1RegistrationVerifyaccesscodePost
+      operationId: dev/verifyaccesscode
       deprecated: false
       produces:
       - application/json
@@ -144,7 +144,7 @@ paths:
       summary: dev/updatememauthinfo
       tags:
       - Misc
-      operationId: MemberV1RegistrationUpdatememauthinfoPost
+      operationId: dev/updatememauthinfo
       deprecated: false
       produces:
       - application/json
@@ -175,7 +175,7 @@ paths:
       summary: dev/getmemauthinfo
       tags:
       - Misc
-      operationId: MemberV1RegistrationGetmemauthinfoPost
+      operationId: dev/getmemauthinfo
       deprecated: false
       produces:
       - application/json
@@ -206,7 +206,7 @@ paths:
       summary: dev/authwithssn
       tags:
       - Misc
-      operationId: MemberV1RegistrationAuthwithssnPost
+      operationId: dev/authwithssn
       deprecated: false
       produces:
       - application/json
@@ -237,7 +237,7 @@ paths:
       summary: saltedGetTokens
       tags:
       - Misc
-      operationId: GettokensGet
+      operationId: saltedGetTokens
       deprecated: false
       produces:
       - application/json
@@ -257,7 +257,7 @@ paths:
       summary: decrypt
       tags:
       - Misc
-      operationId: ClientsidedecryptionPost
+      operationId: decrypt
       deprecated: false
       produces:
       - application/json
@@ -293,7 +293,7 @@ paths:
       summary: dev/updatememprofile
       tags:
       - Misc
-      operationId: MemberV1InfoUpdatememprofilePost
+      operationId: dev/updatememprofile
       deprecated: false
       produces:
       - application/json
@@ -333,7 +333,7 @@ paths:
       summary: dev/updatememprofile copy
       tags:
       - Misc
-      operationId: MemberV1InfoUpdatemempreferencePost
+      operationId: dev/updatememprofilecopy
       deprecated: false
       produces:
       - application/json
