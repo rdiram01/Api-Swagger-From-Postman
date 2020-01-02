@@ -2,7 +2,6 @@ swagger: '2.0'
 info:
   version: '1.0'
   title: DevApis
-  description: 'TODO: Add Description'
   contact: {}
 host: mobilememberstage.bluecrossma.com
 basePath: /memapi_dev/mobilekeyservice/v1
@@ -16,7 +15,6 @@ produces:
 paths:
   /member/v1/access/registermem:
     post:
-      description: 'TODO: Add Description'
       summary: dev/registermem
       tags:
       - Misc
@@ -47,7 +45,6 @@ paths:
           headers: {}
   /member/v1/access/memberlogin:
     post:
-      description: 'TODO: Add Description'
       summary: dev/memberlogin
       tags:
       - Misc
@@ -78,7 +75,6 @@ paths:
           headers: {}
   /member/v1/registration/sendaccesscode:
     post:
-      description: 'TODO: Add Description'
       summary: dev/sendaccesscode
       tags:
       - Misc
@@ -109,7 +105,6 @@ paths:
           headers: {}
   /member/v1/registration/verifyaccesscode:
     post:
-      description: 'TODO: Add Description'
       summary: dev/verifyaccesscode
       tags:
       - Misc
@@ -140,7 +135,6 @@ paths:
           headers: {}
   /member/v1/registration/updatememauthinfo:
     post:
-      description: 'TODO: Add Description'
       summary: dev/updatememauthinfo
       tags:
       - Misc
@@ -171,7 +165,6 @@ paths:
           headers: {}
   /member/v1/registration/getmemauthinfo:
     post:
-      description: 'TODO: Add Description'
       summary: dev/getmemauthinfo
       tags:
       - Misc
@@ -233,7 +226,6 @@ paths:
           headers: {}
   /gettokens:
     get:
-      description: 'TODO: Add Description'
       summary: saltedGetTokens
       tags:
       - Misc
@@ -253,7 +245,6 @@ paths:
           headers: {}
   /clientsidedecryption:
     post:
-      description: 'TODO: Add Description'
       summary: decrypt
       tags:
       - Misc
@@ -289,7 +280,6 @@ paths:
           headers: {}
   /member/v1/info/updatememprofile:
     post:
-      description: 'TODO: Add Description'
       summary: dev/updatememprofile
       tags:
       - Misc
@@ -329,7 +319,6 @@ paths:
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
   /member/v1/info/updatemempreference:
     post:
-      description: 'TODO: Add Description'
       summary: dev/updatememprofile copy
       tags:
       - Misc
