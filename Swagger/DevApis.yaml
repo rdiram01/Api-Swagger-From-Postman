@@ -22,6 +22,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -51,6 +53,8 @@ paths:
       operationId: dev/memberlogin
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -82,6 +86,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -111,6 +117,8 @@ paths:
       operationId: dev/verifyaccesscode
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -142,6 +150,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -171,6 +181,8 @@ paths:
       operationId: dev/getmemauthinfo
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -202,6 +214,8 @@ paths:
       operationId: dev/authwithssn
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -252,6 +266,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -286,6 +302,8 @@ paths:
       operationId: dev/updatememprofile
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -325,6 +343,8 @@ paths:
       operationId: dev/updatememprofilecopy
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
