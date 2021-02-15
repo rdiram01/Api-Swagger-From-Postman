@@ -323,18 +323,46 @@ paths:
         schema:
           $ref: '#/definitions/dev~1updatememprofilerequest'
       responses:
-        200:
-          description: ''
-          headers: {}
         400:
           description: Bad Request
           schema:
-            $ref: '#/definitions/dev~1updatememprofile'
+            $ref: '#/definitions/dev~1updatememprofile1'
           examples:
             application/json:
               result: -1
               errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+              default: origin, x-requested-with, accept
+            Access-Control-Allow-Methods:
+              type: string
+              default: GET, PUT, POST, DELETE
+            Access-Control-Allow-Origin:
+              type: string
+              default: '*'
+            Access-Control-Max-Age:
+              type: string
+              default: 3628800
+            Connection:
+              type: string
+              default: keep-alive
+            Content-Length:
+              type: string
+              default: 181
+            Date:
+              type: string
+              default: Thu, 05 Oct 2017 17:20:49 GMT
+            Server:
+              type: string
+              default: Apache-Coyote/1.1
+            Set-Cookie:
+              type: string
+              default: NSC_MCWt-Npcjmfnfncfstubhf=ffffffff09dad72245525d5f4f58455e445a4a42378b;Version=1;Max-Age=43200;path=/;secure;httponly
+            p3p:
+              type: string
+              default: CP="NON CUR OTPi OUR NOR UNI"
   /member/v1/info/updatemempreference:
     post:
       summary: dev/updatememprofile copy
@@ -364,18 +392,46 @@ paths:
         schema:
           $ref: '#/definitions/dev~1updatememprofilecopyrequest'
       responses:
-        200:
-          description: ''
-          headers: {}
         400:
           description: Bad Request
           schema:
-            $ref: '#/definitions/dev~1updatememprofile'
+            $ref: '#/definitions/dev~1updatememprofile1'
           examples:
             application/json:
               result: -1
               errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+              default: origin, x-requested-with, accept
+            Access-Control-Allow-Methods:
+              type: string
+              default: GET, PUT, POST, DELETE
+            Access-Control-Allow-Origin:
+              type: string
+              default: '*'
+            Access-Control-Max-Age:
+              type: string
+              default: 3628800
+            Connection:
+              type: string
+              default: keep-alive
+            Content-Length:
+              type: string
+              default: 181
+            Date:
+              type: string
+              default: Thu, 05 Oct 2017 17:20:49 GMT
+            Server:
+              type: string
+              default: Apache-Coyote/1.1
+            Set-Cookie:
+              type: string
+              default: NSC_MCWt-Npcjmfnfncfstubhf=ffffffff09dad72245525d5f4f58455e445a4a42378b;Version=1;Max-Age=43200;path=/;secure;httponly
+            p3p:
+              type: string
+              default: CP="NON CUR OTPi OUR NOR UNI"
 definitions:
   dev/registermemrequest:
     title: dev/registermemrequest
@@ -503,8 +559,8 @@ definitions:
     required:
     - message
     - key1id
-  dev/updatememprofile:
-    title: dev/updatememprofile
+  dev/updatememprofile1:
+    title: dev/updatememprofile1
     example:
       result: -1
       errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
