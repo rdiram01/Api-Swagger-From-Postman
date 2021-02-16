@@ -432,6 +432,30 @@ paths:
             p3p:
               type: string
               default: CP="NON CUR OTPi OUR NOR UNI"
+  /xml:
+    get:
+      summary: https://bcbsma-nonprod-test.apigee.net/fhir-consent/xml?apikey=xPWErdPMAMw8haGNZvPsJh0gLfH6MlPh
+      tags:
+      - Misc
+      operationId: https://bcbsma-nonprod-test.apigee.net/fhir-consent/xml?apikey=xPWErdPMAMw8haGNZvPsJh0gLfH6MlPh
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: apikey
+        in: query
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
 definitions:
   dev/registermemrequest:
     title: dev/registermemrequest
