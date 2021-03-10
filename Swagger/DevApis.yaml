@@ -329,7 +329,7 @@ paths:
             $ref: '#/definitions/dev~1updatememprofile1'
           examples:
             application/json:
-              result: -1
+              result: '-1'
               errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
           headers:
@@ -344,13 +344,13 @@ paths:
               default: '*'
             Access-Control-Max-Age:
               type: string
-              default: 3628800
+              default: '3628800'
             Connection:
               type: string
               default: keep-alive
             Content-Length:
               type: string
-              default: 181
+              default: '181'
             Date:
               type: string
               default: Thu, 05 Oct 2017 17:20:49 GMT
@@ -398,7 +398,7 @@ paths:
             $ref: '#/definitions/dev~1updatememprofile1'
           examples:
             application/json:
-              result: -1
+              result: '-1'
               errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
               displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
           headers:
@@ -413,13 +413,13 @@ paths:
               default: '*'
             Access-Control-Max-Age:
               type: string
-              default: 3628800
+              default: '3628800'
             Connection:
               type: string
               default: keep-alive
             Content-Length:
               type: string
-              default: 181
+              default: '181'
             Date:
               type: string
               default: Thu, 05 Oct 2017 17:20:49 GMT
@@ -586,7 +586,7 @@ definitions:
   dev/updatememprofile1:
     title: dev/updatememprofile1
     example:
-      result: -1
+      result: '-1'
       errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
       displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
     type: object
