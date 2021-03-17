@@ -42,7 +42,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1registermemrequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/access/memberlogin:
@@ -74,7 +74,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1memberloginrequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/registration/sendaccesscode:
@@ -106,7 +106,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1sendaccesscoderequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/registration/verifyaccesscode:
@@ -138,7 +138,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1verifyaccesscoderequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/registration/updatememauthinfo:
@@ -170,7 +170,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1updatememauthinforequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/registration/getmemauthinfo:
@@ -202,7 +202,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1getmemauthinforequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/registration/authwithssn:
@@ -235,7 +235,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1authwithssnrequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /gettokens:
@@ -254,7 +254,7 @@ paths:
         default: Bearer {token}
         type: string
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /clientsidedecryption:
@@ -291,7 +291,7 @@ paths:
         schema:
           $ref: '#/definitions/decryptrequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /member/v1/info/updatememprofile:
@@ -323,7 +323,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1updatememprofilerequest'
       responses:
-        400:
+        '400':
           description: Bad Request
           schema:
             $ref: '#/definitions/dev~1updatememprofile1'
@@ -392,7 +392,7 @@ paths:
         schema:
           $ref: '#/definitions/dev~1updatememprofilecopyrequest'
       responses:
-        400:
+        '400':
           description: Bad Request
           schema:
             $ref: '#/definitions/dev~1updatememprofile1'
@@ -453,7 +453,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
 definitions:
