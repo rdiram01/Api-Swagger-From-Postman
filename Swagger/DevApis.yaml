@@ -1,508 +1,640 @@
-{
-  "info": {
-    "_postman_id": "1584934-ffaa2a67-5951-0279-1b2c-72e1415262b6",
-    "name": "DevApis",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "dev/registermem ",
-      "_postman_id": "1584934-75888355-3bca-c059-f1ad-2bc7df2cc146",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"BKhp4csbNFLvj8yztgOWTMKADzkbjD3Lunny+CQtFMsN/R3zZthRNEMPC7Y8eyqGGV+zBIO99Potniq3B9SGMVy2wmP5rez/7CvUHDASIrEFSPOacks7EVfRWEBV3ko5qk0d9C7axftJ31rQBzW3HXA8r/9nZO7lzljGDIJXWRk=\",\n    \"key1id\": \"1b282082aee6481dbd38cad39edc3117\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/access/registermem"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/memberlogin",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "console.log(\"Access-Control-Allow-Origin value:\" + postman.getResponseHeader(\"Access-Control-Allow-Origin\"));",
-              "    ",
-              "console.log(\"Access-Control-Allow-Methods value:\" + postman.getResponseHeader(\"Access-Control-Allow-Methods\"));"
-            ]
-          }
-        }
-      ],
-      "_postman_id": "1584934-85533e17-1c83-e049-b248-68e40b733002",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"pjsGzPjGwy6WgN5orsfIkWiZXpj6OfoxUyrQHnaYuaSN+UyAeUJ2Vx7B1/Dszlm3f4EtqxS4Rk0Sp3IFyQ9vw5CW1j8tAl5+JZOstpsPvmEJpxVoddM8bIlymIQ53bKRYNay9QaNrC4sgbP/mn9VFw==\",\n    \"key1id\": \"c838c12f13c2458aafd6e4e029e2f884\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/access/memberlogin"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/sendaccesscode",
-      "_postman_id": "1584934-8454438d-12cb-49ab-8c9d-22209b303caf",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer ZIxe7zs6NwxJzAW8wEq5L1zEAI2r"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"t43SYE6W0A6r59KNDnssVqedAf1sU/xTiTNV6ppDOW0SR5ZuUrFtA221WcFLUIzJt1YZlASYSuBbMAqC39YIkuSYF7RlqruswDLdBgI3pDI=\",\n    \"key1id\": \"8bafb4f9e06643beab00e0044a841fee\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/registration/sendaccesscode"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/verifyaccesscode",
-      "_postman_id": "1584934-6adc57ee-4bd3-4e9f-4909-2387ffaa4321",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer ZIxe7zs6NwxJzAW8wEq5L1zEAI2r"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjtW9RjwL2kA2jbsoHZkzgYOtaW/kkQJHr1NFS8SNDV3NdtQ0lqa9S0KowHxLZtMwDfeLqdDumisJUG3LeWHC4185TIDgTXZUw8D3XdwMjvRVA==\",\n    \"key1id\": \"71adb693f2f4457abfc493949f9a4f2b\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/registration/verifyaccesscode"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/updatememauthinfo",
-      "_postman_id": "1584934-76e0bc10-3f3f-12f7-5ca6-ed5282a2d55a",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer aKrJZrkZ0eVFAjutwCGJMAmku3Uk"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"L4ni23i5hj1EySUx63t06fz8EvkBFM47aq4hJ6+orP3e0yf4DuimPGnQGgFOs3bA+zE0Nx2WXuuVchMC2rmsodgveRx1gegoZkLcTSZ3ipQgvfvhqnpMAIl6hSsOcrkjNBWwRFhxHM0Xs8xy4fPrRf69nOM1ZgtqTTJZIRSJbhJSvhPeOnetACD/vWPymiNTDc5WMZn0yFU0RS8Vbmo/vN6J7OefF8qY6q76uM7enhMbSMixz9dsAlTOZBeKldAe2PnC9ORu2j5kgfKqhY+juncj9eyk89RiQ8XjairRl6Y5uUbtHUipPC3osZK0gXH05TSto9eW+CUAvkUiocfo452EjSRQivdKYp6PyTwNouU=\",\n    \"key1id\": \"71adb693f2f4457abfc493949f9a4f2b\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/registration/updatememauthinfo"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/getmemauthinfo",
-      "_postman_id": "1584934-cc1b2950-4e4e-4bf8-94ca-e5d21979918b",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer KN4SZHnI2vGfrXekmbPHBrNCbwsJ"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjsESiNU/LTxcvUsZC3w5l2xclpe9Oj+3MiTlNLgmN5f1ZcSr9r8bBjAD5hEED8tWSU=\",\n    \"key1id\": \"71adb693f2f4457abfc493949f9a4f2b\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/registration/getmemauthinfo"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/authwithssn",
-      "_postman_id": "1584934-53ae7520-99c3-ec44-e162-f45506c2591e",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer BkzSWLAEuuHoaYetKhJWeJDG4Rw2"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+Sjv9UJ2Ck171IDBwuwFAC5ia0MA+x4zWN6m2f1yb1YAtHta3FROTPUN8iDisuHCD/XaUfZmdR4IgTVSOdZCdha9l\",\n    \"key1id\": \"71adb693f2f4457abfc493949f9a4f2b\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/registration/authwithssn",
-        "description": "Final step in Authentication process when Member enters their ssn"
-      },
-      "response": []
-    },
-    {
-      "name": "saltedGetTokens",
-      "_postman_id": "1584934-b62f40e3-e40f-bddb-b758-55d7ac59f6d2",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": []
-        },
-        "url": "https://mobilememberstage.bluecrossma.com/memapi_dev/mobilekeyservice/v1/gettokens"
-      },
-      "response": []
-    },
-    {
-      "name": "decrypt",
-      "_postman_id": "1584934-9c1ce4f8-46ad-d54f-cbc5-3ae6d5ba5da5",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "autho",
-            "value": "Bearer 5vHUUgC91kO1WC6SUtgYstMEDAgI"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"LaYioNcIw5nwn7+pZRPcDrEMCbv0Ay3tvU8pKZNtYWm4qUnBbL+W0FT0U+Zf7+sqJBz08HDaWBoQoaMCXyObHasVu3jDprFP8E7cA1MOxHZKsF1ruLcOqTR0uWqIHQfud3ZUYqdqRXMBLoT8Xw8xVIo44CyEOuNGr95Ynp6f2JLx1PjYLkUpAGvkd9ttWknSstqNNwZIscFNmP0f8Kw6dZlJ6O1n+uSIVx/5BYAiPwgi+6nX7N8wZ6gpYJpk50a6ELq1YE4uvwYtYGL4O4EwHuGya8FGB2gglCYSBslTa8QqLOzNW5lWg93MfBYQrAqlS29owYZrztvx8R9Gn1uRJZco7PItsaeeVyM99tNul2+BxRyP7RTIT4QWwvxb+0TwsVrqw6IjT/a4zr0+RIHSqJZEMhvkJvU9zZZTqO9kCT7ilzi3qKZxKBNRx9K+vAvkLhejUY/gJWWowNHmr3UCNWqNG1M7d0Bc7Z8q0wp/NATndxtWhiKMrZ2ZdXQFoVmpxBa3sCJGOCN6ECMfTgMHXqq6TgyE9uW2zPY3V0WgZqpkHi85GsXOYzPGnE4GF1oCnIAzG92c7jqI+n2ZxjFWznHCIr9Al7ZqPJaLjj4Tq+aQg2Sdv7B8oixzy7RlEfHEiaRN3lBGYbK6VDk62uiCXaiGzjc6vEEwGfSSnvoMyCCkJPFArRpxIW/e2LUvl2ENnNulEcniFuc0xLD0VhnS/yk8IEVJsJWeYGPH35JWuaEhjH04D7co3g0LZZCNWbiOgE7StlQVRuDWc8eQhy6tmwP9U9BF2ZZFp2pwyXQBsoa7IHnWdQkoNvzvJr2HAOX4HFdM1FFqQVrIAZk1ZtxOvj1+k4/7OJxImBnLZtIOCBDnxl06PQSKBjmKzSLu1VqQeAZygGaaVcqEe2RDpsOPfLhwQE4Mx9O/Xn+++egX9tWipP2KrjM/++MsBhBf2W0wGWZG47IYHuITh4lfgLuOLDK9jHanq6cNYIspsEJQJqcz6fXuJXB2fHVDqQieWmmG\",\n    \"key2id\":\"e3d6c6213b6b4458916142ff2cb71db1\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/clientsidedecryption"
-      },
-      "response": []
-    },
-    {
-      "name": "dev/updatememprofile",
-      "_postman_id": "1584934-8acc75af-e4a8-2ebe-3db4-089d34e71a40",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer aRiTglnFfpofUGHhlobnHIQDimKA"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"eOc7jw73C+4hKtew2NSGpWp8vvMKZM9/nAGTnfuF2y6F38NlI4Smb7JkSb1iMMTmfiXWtacveEVCal0kPpZD6l8FqOntA0NSLQEbwkAplNGhJvHuTw4htRplzzytHw2OugKsQ5BjxfaFyTpCcS4aaQIkl5ctZk/XHOH74NyA/e711aOajBOMF9iGPMX01y9qki5Q23Gd7D6zisztTJsLvhT2xc45lzntLrSWjlxsLkNfITHU5Sk8IG7fPHt9AucIrnJ4qEid2OwAbwCrkWetzw==\",\n    \"key1id\": \"0fd3e4264e6c4734af3cabdfa21ffa87\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/info/updatememprofile"
-      },
-      "response": [
-        {
-          "id": "1584934-ee32baf1-b9f7-6745-4796-b331af9b4c85",
-          "name": "dev/updatememprofile",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "disabled": false
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer M6CAZZITLcEPmsZ21wGxvmPO5lDK",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"message\": \"sNJoiKEXbwN3uDTKW/MOreI4XZsWgOIGEWTzBRJkr68tiyFRcekDE1hnBwyvTeDzcaY9zhsBvSbeCWj8PVMpoctpzGLYM0xTjUCM6FqDSDLFSEYV/7JDfFgw3KmgXAFyV/igqiX9IwdHH4FXK5KCSUwSSzQaTrRfDcR0Cba8Bd2vEqlKAACmRlj4L5KXO2dHV2xpaOFSJtjZS8N7DGvliy/4Xm7ub5sdr7ys1GFhpGQUDsYKPwP+9g0j8DwCTkaS/SkmEqiqS7xS+O5f/xZWgw==\",\n    \"key1id\": \"e9307f2d1f2443dc91e469fd068755b0\"\n}"
-            },
-            "url": "https://bcbsma-dev.apigee.net/member/v1/info/updatememprofile"
-          },
-          "status": "Bad Request",
-          "code": 400,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Access-Control-Allow-Headers",
-              "value": "origin, x-requested-with, accept",
-              "name": "Access-Control-Allow-Headers",
-              "description": ""
-            },
-            {
-              "key": "Access-Control-Allow-Methods",
-              "value": "GET, PUT, POST, DELETE",
-              "name": "Access-Control-Allow-Methods",
-              "description": ""
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "*",
-              "name": "Access-Control-Allow-Origin",
-              "description": ""
-            },
-            {
-              "key": "Access-Control-Max-Age",
-              "value": "3628800",
-              "name": "Access-Control-Max-Age",
-              "description": ""
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive",
-              "name": "Connection",
-              "description": ""
-            },
-            {
-              "key": "Content-Length",
-              "value": "181",
-              "name": "Content-Length",
-              "description": ""
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json",
-              "name": "Content-Type",
-              "description": ""
-            },
-            {
-              "key": "Date",
-              "value": "Thu, 05 Oct 2017 17:20:49 GMT",
-              "name": "Date",
-              "description": ""
-            },
-            {
-              "key": "Server",
-              "value": "Apache-Coyote/1.1",
-              "name": "Server",
-              "description": ""
-            },
-            {
-              "key": "Set-Cookie",
-              "value": "NSC_MCWt-Npcjmfnfncfstubhf=ffffffff09dad72245525d5f4f58455e445a4a42378b;Version=1;Max-Age=43200;path=/;secure;httponly",
-              "name": "Set-Cookie",
-              "description": ""
-            },
-            {
-              "key": "p3p",
-              "value": "CP=\"NON CUR OTPi OUR NOR UNI\"",
-              "name": "p3p",
-              "description": ""
-            }
-          ],
-          "cookie": [
-            {
-              "expires": "Fri Oct 06 2017 05:20:49 GMT+0000 (Coordinated Universal Time)",
-              "httpOnly": true,
-              "domain": "bcbsma-dev.apigee.net",
-              "path": "/",
-              "secure": true,
-              "value": "ffffffff09dad72245525d5f4f58455e445a4a42378b",
-              "key": "NSC_MCWt-Npcjmfnfncfstubhf"
-            }
-          ],
-          "responseTime": "317",
-          "body": "{\"result\":\"-1\",\"errormessage\":\"uid or upid or subid or ttype or memkey or memkeyvalue are empty\",\"displaymessage\":\"uid or upid or subid or ttype or memkey or memkeyvalue are empty\"}"
-        }
-      ]
-    },
-    {
-      "name": "dev/updatememprofile copy",
-      "_postman_id": "1584934-06d43737-3bea-ecee-7c45-3430b81f3ea9",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer eVP0RfgvGr62WUHo7B1YX11sZPDQ"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"message\": \"LG3jPpH73/1v6pvve5cbi4te4ZH+yD5rueIw4gh5JugsDqQP2QKP80BAn265Czv2p1kri70m7PRZTje7eLk22Ve0qUN4uOjcosxrH/YeCs+qiC0O+YcS+4AMLtGOQ/JjQ7bJDHSk91WC3T747BHWaqaWbOhu+g8Nld1E0Iqux694+ceXPMoBT6YVhA19JThhysYP5Cub1/kp3U3FDUhtr4ir4i03MdoeED4Ws49s69nOjNd57eZucDIGcYZGWpNlrSw8KWeBixNRvbJSPApFaQ==\",\n    \"key1id\": \"c2376ededd0d4101929c6084679ab10f\"\n}"
-        },
-        "url": "https://bcbsma-dev.apigee.net/member/v1/info/updatemempreference"
-      },
-      "response": [
-        {
-          "id": "1584934-aaef5c47-ee2a-89a2-6d09-fc054dcd94c2",
-          "name": "dev/updatememprofile",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "disabled": false
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer M6CAZZITLcEPmsZ21wGxvmPO5lDK",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"message\": \"sNJoiKEXbwN3uDTKW/MOreI4XZsWgOIGEWTzBRJkr68tiyFRcekDE1hnBwyvTeDzcaY9zhsBvSbeCWj8PVMpoctpzGLYM0xTjUCM6FqDSDLFSEYV/7JDfFgw3KmgXAFyV/igqiX9IwdHH4FXK5KCSUwSSzQaTrRfDcR0Cba8Bd2vEqlKAACmRlj4L5KXO2dHV2xpaOFSJtjZS8N7DGvliy/4Xm7ub5sdr7ys1GFhpGQUDsYKPwP+9g0j8DwCTkaS/SkmEqiqS7xS+O5f/xZWgw==\",\n    \"key1id\": \"e9307f2d1f2443dc91e469fd068755b0\"\n}"
-            },
-            "url": "https://bcbsma-dev.apigee.net/member/v1/info/updatememprofile"
-          },
-          "status": "Bad Request",
-          "code": 400,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Access-Control-Allow-Headers",
-              "value": "origin, x-requested-with, accept",
-              "name": "Access-Control-Allow-Headers",
-              "description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
-            },
-            {
-              "key": "Access-Control-Allow-Methods",
-              "value": "GET, PUT, POST, DELETE",
-              "name": "Access-Control-Allow-Methods",
-              "description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "*",
-              "name": "Access-Control-Allow-Origin",
-              "description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
-            },
-            {
-              "key": "Access-Control-Max-Age",
-              "value": "3628800",
-              "name": "Access-Control-Max-Age",
-              "description": "Indicates how long the results of a preflight request can be cached in seconds."
-            },
-            {
-              "key": "Connection",
-              "value": "keep-alive",
-              "name": "Connection",
-              "description": "Options that are desired for the connection"
-            },
-            {
-              "key": "Content-Length",
-              "value": "181",
-              "name": "Content-Length",
-              "description": "The length of the response body in octets (8-bit bytes)"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json",
-              "name": "Content-Type",
-              "description": "The mime type of this content"
-            },
-            {
-              "key": "Date",
-              "value": "Thu, 05 Oct 2017 17:20:49 GMT",
-              "name": "Date",
-              "description": "The date and time that the message was sent"
-            },
-            {
-              "key": "Server",
-              "value": "Apache-Coyote/1.1",
-              "name": "Server",
-              "description": "A name for the server"
-            },
-            {
-              "key": "Set-Cookie",
-              "value": "NSC_MCWt-Npcjmfnfncfstubhf=ffffffff09dad72245525d5f4f58455e445a4a42378b;Version=1;Max-Age=43200;path=/;secure;httponly",
-              "name": "Set-Cookie",
-              "description": "an HTTP cookie"
-            },
-            {
-              "key": "p3p",
-              "value": "CP=\"NON CUR OTPi OUR NOR UNI\"",
-              "name": "p3p",
-              "description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
-            }
-          ],
-          "cookie": [
-            {
-              "expires": "Fri Oct 06 2017 05:20:49 GMT+0000 (Coordinated Universal Time)",
-              "httpOnly": true,
-              "domain": "bcbsma-dev.apigee.net",
-              "path": "/",
-              "secure": true,
-              "value": "ffffffff09dad72245525d5f4f58455e445a4a42378b",
-              "key": "NSC_MCWt-Npcjmfnfncfstubhf"
-            }
-          ],
-          "responseTime": "317",
-          "body": "{\"result\":\"-1\",\"errormessage\":\"uid or upid or subid or ttype or memkey or memkeyvalue are empty\",\"displaymessage\":\"uid or upid or subid or ttype or memkey or memkeyvalue are empty\"}"
-        }
-      ]
-    },
-    {
-      "name": "\thttps://bcbsma-nonprod-test.apigee.net/fhir-consent/xml?apikey=xPWErdPMAMw8haGNZvPsJh0gLfH6MlPh\n",
-      "_postman_id": "1584934-e6a60e6a-5065-425f-b8c8-711a5a49c189",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "https://bcbsma-nonprod-test.apigee.net/fhir-consent/xml?apikey=SrlA1T239sJLc9BKHukA0yhrugU8RgPc\n\n",
-          "protocol": "https",
-          "host": [
-            "bcbsma-nonprod-test",
-            "apigee",
-            "net"
-          ],
-          "path": [
-            "fhir-consent",
-            "xml"
-          ],
-          "query": [
-            {
-              "key": "apikey",
-              "value": "SrlA1T239sJLc9BKHukA0yhrugU8RgPc\n\n"
-            }
-          ]
-        }
-      },
-      "response": []
-    }
-  ]
-}
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: DevApis
+  contact: {}
+host: mobilememberstage.bluecrossma.com
+basePath: /memapi_dev/mobilekeyservice/v1
+securityDefinitions: {}
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /member/v1/access/registermem:
+    post:
+      summary: dev/registermem
+      tags:
+      - Misc
+      operationId: dev/registermem
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1registermemrequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/access/memberlogin:
+    post:
+      summary: dev/memberlogin
+      tags:
+      - Misc
+      operationId: dev/memberlogin
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1memberloginrequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/registration/sendaccesscode:
+    post:
+      summary: dev/sendaccesscode
+      tags:
+      - Misc
+      operationId: dev/sendaccesscode
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1sendaccesscoderequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/registration/verifyaccesscode:
+    post:
+      summary: dev/verifyaccesscode
+      tags:
+      - Misc
+      operationId: dev/verifyaccesscode
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1verifyaccesscoderequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/registration/updatememauthinfo:
+    post:
+      summary: dev/updatememauthinfo
+      tags:
+      - Misc
+      operationId: dev/updatememauthinfo
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1updatememauthinforequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/registration/getmemauthinfo:
+    post:
+      summary: dev/getmemauthinfo
+      tags:
+      - Misc
+      operationId: dev/getmemauthinfo
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1getmemauthinforequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/registration/authwithssn:
+    post:
+      description: Final step in Authentication process when Member enters their ssn
+      summary: dev/authwithssn
+      tags:
+      - Misc
+      operationId: dev/authwithssn
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1authwithssnrequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /gettokens:
+    get:
+      summary: saltedGetTokens
+      tags:
+      - Misc
+      operationId: saltedGetTokens
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /clientsidedecryption:
+    post:
+      summary: decrypt
+      tags:
+      - Misc
+      operationId: decrypt
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: autho
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/decryptrequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /member/v1/info/updatememprofile:
+    post:
+      summary: dev/updatememprofile
+      tags:
+      - Misc
+      operationId: dev/updatememprofile
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1updatememprofilerequest'
+      responses:
+        '400':
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dev~1updatememprofile1'
+          examples:
+            application/json:
+              result: '-1'
+              errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+              displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+              default: origin, x-requested-with, accept
+            Access-Control-Allow-Methods:
+              type: string
+              default: GET, PUT, POST, DELETE
+            Access-Control-Allow-Origin:
+              type: string
+              default: '*'
+            Access-Control-Max-Age:
+              type: string
+              default: '3628800'
+            Connection:
+              type: string
+              default: keep-alive
+            Content-Length:
+              type: string
+              default: '181'
+            Date:
+              type: string
+              default: Thu, 05 Oct 2017 17:20:49 GMT
+            Server:
+              type: string
+              default: Apache-Coyote/1.1
+            Set-Cookie:
+              type: string
+              default: NSC_MCWt-Npcjmfnfncfstubhf=ffffffff09dad72245525d5f4f58455e445a4a42378b;Version=1;Max-Age=43200;path=/;secure;httponly
+            p3p:
+              type: string
+              default: CP="NON CUR OTPi OUR NOR UNI"
+  /member/v1/info/updatemempreference:
+    post:
+      summary: dev/updatememprofile copy
+      tags:
+      - Misc
+      operationId: dev/updatememprofilecopy
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/dev~1updatememprofilecopyrequest'
+      responses:
+        '400':
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dev~1updatememprofile1'
+          examples:
+            application/json:
+              result: '-1'
+              errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+              displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+          headers:
+            Access-Control-Allow-Headers:
+              type: string
+              default: origin, x-requested-with, accept
+            Access-Control-Allow-Methods:
+              type: string
+              default: GET, PUT, POST, DELETE
+            Access-Control-Allow-Origin:
+              type: string
+              default: '*'
+            Access-Control-Max-Age:
+              type: string
+              default: '3628800'
+            Connection:
+              type: string
+              default: keep-alive
+            Content-Length:
+              type: string
+              default: '181'
+            Date:
+              type: string
+              default: Thu, 05 Oct 2017 17:20:49 GMT
+            Server:
+              type: string
+              default: Apache-Coyote/1.1
+            Set-Cookie:
+              type: string
+              default: NSC_MCWt-Npcjmfnfncfstubhf=ffffffff09dad72245525d5f4f58455e445a4a42378b;Version=1;Max-Age=43200;path=/;secure;httponly
+            p3p:
+              type: string
+              default: CP="NON CUR OTPi OUR NOR UNI"
+  /xml:
+    get:
+      summary: https://bcbsma-nonprod-test.apigee.net/fhir-consent/xml?apikey=xPWErdPMAMw8haGNZvPsJh0gLfH6MlPh
+      tags:
+      - Misc
+      operationId: https://bcbsma-nonprod-test.apigee.net/fhir-consent/xml?apikey=xPWErdPMAMw8haGNZvPsJh0gLfH6MlPh
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: apikey
+        in: query
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+definitions:
+  dev/registermemrequest:
+    title: dev/registermemrequest
+    example:
+      message: BKhp4csbNFLvj8yztgOWTMKADzkbjD3Lunny+CQtFMsN/R3zZthRNEMPC7Y8eyqGGV+zBIO99Potniq3B9SGMVy2wmP5rez/7CvUHDASIrEFSPOacks7EVfRWEBV3ko5qk0d9C7axftJ31rQBzW3HXA8r/9nZO7lzljGDIJXWRk=
+      key1id: 1b282082aee6481dbd38cad39edc3117
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/memberloginrequest:
+    title: dev/memberloginrequest
+    example:
+      message: pjsGzPjGwy6WgN5orsfIkWiZXpj6OfoxUyrQHnaYuaSN+UyAeUJ2Vx7B1/Dszlm3f4EtqxS4Rk0Sp3IFyQ9vw5CW1j8tAl5+JZOstpsPvmEJpxVoddM8bIlymIQ53bKRYNay9QaNrC4sgbP/mn9VFw==
+      key1id: c838c12f13c2458aafd6e4e029e2f884
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/sendaccesscoderequest:
+    title: dev/sendaccesscoderequest
+    example:
+      message: t43SYE6W0A6r59KNDnssVqedAf1sU/xTiTNV6ppDOW0SR5ZuUrFtA221WcFLUIzJt1YZlASYSuBbMAqC39YIkuSYF7RlqruswDLdBgI3pDI=
+      key1id: 8bafb4f9e06643beab00e0044a841fee
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/verifyaccesscoderequest:
+    title: dev/verifyaccesscoderequest
+    example:
+      message: zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjtW9RjwL2kA2jbsoHZkzgYOtaW/kkQJHr1NFS8SNDV3NdtQ0lqa9S0KowHxLZtMwDfeLqdDumisJUG3LeWHC4185TIDgTXZUw8D3XdwMjvRVA==
+      key1id: 71adb693f2f4457abfc493949f9a4f2b
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/updatememauthinforequest:
+    title: dev/updatememauthinforequest
+    example:
+      message: L4ni23i5hj1EySUx63t06fz8EvkBFM47aq4hJ6+orP3e0yf4DuimPGnQGgFOs3bA+zE0Nx2WXuuVchMC2rmsodgveRx1gegoZkLcTSZ3ipQgvfvhqnpMAIl6hSsOcrkjNBWwRFhxHM0Xs8xy4fPrRf69nOM1ZgtqTTJZIRSJbhJSvhPeOnetACD/vWPymiNTDc5WMZn0yFU0RS8Vbmo/vN6J7OefF8qY6q76uM7enhMbSMixz9dsAlTOZBeKldAe2PnC9ORu2j5kgfKqhY+juncj9eyk89RiQ8XjairRl6Y5uUbtHUipPC3osZK0gXH05TSto9eW+CUAvkUiocfo452EjSRQivdKYp6PyTwNouU=
+      key1id: 71adb693f2f4457abfc493949f9a4f2b
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/getmemauthinforequest:
+    title: dev/getmemauthinforequest
+    example:
+      message: zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+SjsESiNU/LTxcvUsZC3w5l2xclpe9Oj+3MiTlNLgmN5f1ZcSr9r8bBjAD5hEED8tWSU=
+      key1id: 71adb693f2f4457abfc493949f9a4f2b
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/authwithssnrequest:
+    title: dev/authwithssnrequest
+    example:
+      message: zFdzSjGHfTH/Vtj/LhwUjEPZMlqHLMqlR/4b2cr+Sjv9UJ2Ck171IDBwuwFAC5ia0MA+x4zWN6m2f1yb1YAtHta3FROTPUN8iDisuHCD/XaUfZmdR4IgTVSOdZCdha9l
+      key1id: 71adb693f2f4457abfc493949f9a4f2b
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  decryptrequest:
+    title: decryptrequest
+    example:
+      message: LaYioNcIw5nwn7+pZRPcDrEMCbv0Ay3tvU8pKZNtYWm4qUnBbL+W0FT0U+Zf7+sqJBz08HDaWBoQoaMCXyObHasVu3jDprFP8E7cA1MOxHZKsF1ruLcOqTR0uWqIHQfud3ZUYqdqRXMBLoT8Xw8xVIo44CyEOuNGr95Ynp6f2JLx1PjYLkUpAGvkd9ttWknSstqNNwZIscFNmP0f8Kw6dZlJ6O1n+uSIVx/5BYAiPwgi+6nX7N8wZ6gpYJpk50a6ELq1YE4uvwYtYGL4O4EwHuGya8FGB2gglCYSBslTa8QqLOzNW5lWg93MfBYQrAqlS29owYZrztvx8R9Gn1uRJZco7PItsaeeVyM99tNul2+BxRyP7RTIT4QWwvxb+0TwsVrqw6IjT/a4zr0+RIHSqJZEMhvkJvU9zZZTqO9kCT7ilzi3qKZxKBNRx9K+vAvkLhejUY/gJWWowNHmr3UCNWqNG1M7d0Bc7Z8q0wp/NATndxtWhiKMrZ2ZdXQFoVmpxBa3sCJGOCN6ECMfTgMHXqq6TgyE9uW2zPY3V0WgZqpkHi85GsXOYzPGnE4GF1oCnIAzG92c7jqI+n2ZxjFWznHCIr9Al7ZqPJaLjj4Tq+aQg2Sdv7B8oixzy7RlEfHEiaRN3lBGYbK6VDk62uiCXaiGzjc6vEEwGfSSnvoMyCCkJPFArRpxIW/e2LUvl2ENnNulEcniFuc0xLD0VhnS/yk8IEVJsJWeYGPH35JWuaEhjH04D7co3g0LZZCNWbiOgE7StlQVRuDWc8eQhy6tmwP9U9BF2ZZFp2pwyXQBsoa7IHnWdQkoNvzvJr2HAOX4HFdM1FFqQVrIAZk1ZtxOvj1+k4/7OJxImBnLZtIOCBDnxl06PQSKBjmKzSLu1VqQeAZygGaaVcqEe2RDpsOPfLhwQE4Mx9O/Xn+++egX9tWipP2KrjM/++MsBhBf2W0wGWZG47IYHuITh4lfgLuOLDK9jHanq6cNYIspsEJQJqcz6fXuJXB2fHVDqQieWmmG
+      key2id: e3d6c6213b6b4458916142ff2cb71db1
+    type: object
+    properties:
+      message:
+        type: string
+      key2id:
+        type: string
+    required:
+    - message
+    - key2id
+  dev/updatememprofilerequest:
+    title: dev/updatememprofilerequest
+    example:
+      message: eOc7jw73C+4hKtew2NSGpWp8vvMKZM9/nAGTnfuF2y6F38NlI4Smb7JkSb1iMMTmfiXWtacveEVCal0kPpZD6l8FqOntA0NSLQEbwkAplNGhJvHuTw4htRplzzytHw2OugKsQ5BjxfaFyTpCcS4aaQIkl5ctZk/XHOH74NyA/e711aOajBOMF9iGPMX01y9qki5Q23Gd7D6zisztTJsLvhT2xc45lzntLrSWjlxsLkNfITHU5Sk8IG7fPHt9AucIrnJ4qEid2OwAbwCrkWetzw==
+      key1id: 0fd3e4264e6c4734af3cabdfa21ffa87
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+  dev/updatememprofile1:
+    title: dev/updatememprofile1
+    example:
+      result: '-1'
+      errormessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+      displaymessage: uid or upid or subid or ttype or memkey or memkeyvalue are empty
+    type: object
+    properties:
+      result:
+        type: string
+      errormessage:
+        type: string
+      displaymessage:
+        type: string
+    required:
+    - result
+    - errormessage
+    - displaymessage
+  dev/updatememprofilecopyrequest:
+    title: dev/updatememprofilecopyrequest
+    example:
+      message: LG3jPpH73/1v6pvve5cbi4te4ZH+yD5rueIw4gh5JugsDqQP2QKP80BAn265Czv2p1kri70m7PRZTje7eLk22Ve0qUN4uOjcosxrH/YeCs+qiC0O+YcS+4AMLtGOQ/JjQ7bJDHSk91WC3T747BHWaqaWbOhu+g8Nld1E0Iqux694+ceXPMoBT6YVhA19JThhysYP5Cub1/kp3U3FDUhtr4ir4i03MdoeED4Ws49s69nOjNd57eZucDIGcYZGWpNlrSw8KWeBixNRvbJSPApFaQ==
+      key1id: c2376ededd0d4101929c6084679ab10f
+    type: object
+    properties:
+      message:
+        type: string
+      key1id:
+        type: string
+    required:
+    - message
+    - key1id
+tags:
+- name: Misc
+  description: ''
